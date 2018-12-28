@@ -10,11 +10,4 @@ export class AppComponent {
   title = 'Tour of Heroes';
   subtitle = 'Angular Application'
 
-  activeComponent = "Dashboard";
-
-  onComponentActivation(componentName: string) {
-    console.log(`App: ${componentName} active.`);
-    this.activeComponent = componentName;
-  }
-
 }

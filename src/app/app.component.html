@@ -1,43 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <!-- <h1>{{ title }}</h1> -->
-      <!-- <h2>{{ subtitle }}</h2> -->
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">{{ title }}</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbar">
-            <ul class="nav navbar-nav">
-              <li [ngClass]="{'active': activeComponent === 'Dashboard'}"
-                  (click)="onComponentActivation('Dashboard')"
-                  ><a routerLink="/dashboard">Dashboard</a></li>
-              <li [ngClass]="{'active': activeComponent === 'Heroes'}"
-                  (click)="onComponentActivation('Heroes')"
-                  ><a routerLink="/heroes">Heroes</a></li>
-            </ul>
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"></a></li>
-
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+      <app-header></app-header>
     </div>
   </div>
   <div class="row">
